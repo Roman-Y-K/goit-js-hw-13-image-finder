@@ -1,3 +1,6 @@
+const BASEURL = `https://pixabay.com/api/?image_type=photo&orientation=horizontal`;
+const KEY = `19641016-0771c97f44f84fb3a7a4f0c18`;
+
 export default class ApiService {
   constructor() {
     this.searchQuery = "";
