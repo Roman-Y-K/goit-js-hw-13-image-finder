@@ -9,7 +9,7 @@ export default class ApiService {
 
   async fetchImages() {
     const res = await fetch(
-      `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.query}&page=${this.page}&per_page=12&key=19641016-0771c97f44f84fb3a7a4f0c18`,
+      `${BASEURL}&q=${this.query}&page=${this.page}&per_page=12&key=${KEY}`,
     );
 
     const data = await res.json();
